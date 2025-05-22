@@ -1,12 +1,49 @@
-# React + Vite
+# 🎰 Dobry Lotek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dobry Lotek** to aplikacja internetowa wspomagająca wybór zestawów liczb do gry Lotto na podstawie statystycznych analiz historycznych losowań. Narzędzie jest proste, eleganckie i dostępne z poziomu przeglądarki.
 
-Currently, two official plugins are available:
+Projekt stworzony jako narzędzie edukacyjno-eksperymentalne. Nie stanowi porady finansowej ani gwarancji trafień.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Funkcje
 
-## Expanding the ESLint configuration
+- Wybór strategii generowania liczb:
+  - Najczęściej losowane
+  - Najrzadziej losowane
+  - Pomiń liczby z ostatnich X losowań
+  - Rozkład parzyste/nieparzyste
+  - Popularne pary i trójki
+- Historia losowań (od lat 50.)
+- Analiza statystyczna z mapą cieplną
+- Możliwość zapisywania wygenerowanych zestawów
+- Obsługa kodu aktywacyjnego po płatności
+- Dane ładowane lokalnie z pliku JSON
+- Nowoczesny interfejs oparty o **React + Vite + MUI**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Jak uruchomić projekt lokalnie
+
+```bash
+git clone https://github.com/twoj-login/nazwa-repo.git
+cd nazwa-repo
+npm install
+npm run dev
+
+## 🧾 Aktywacja
+	1.	Po wejściu na stronę użytkownik widzi ekran płatności.
+	2.	Po kliknięciu “Przejdź do płatności” symulowana jest płatność.
+	3.	Po jej zakończeniu generowany jest kod dostępu (np. DEMO2024).
+	4.	Wklej go w kolejnym widoku, aby odblokować funkcje aplikacji.
+
+Uwaga: W wersji demonstracyjnej płatność jest symulowana.
+
+## Struktura projektu
+src/
+├── components/         # Komponenty UI (Generator, Heatmap, CodeGate itp.)
+├── data/               # Plik draws.json z historią losowań
+├── services/           # Obsługa LocalStorage (np. kod dostępu, ulubione)
+├── utils/              # Kolory, analiza danych
+├── App.jsx             # Główna logika aplikacji
+└── main.jsx            # Punkt wejścia
+
+## 📄 Licencja
+
+MIT © 2025 — hstryj
