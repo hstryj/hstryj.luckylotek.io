@@ -1,0 +1,10 @@
+<svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kulka z liczbą -->
+  <circle cx="25" cy="25" r="20" fill="#e8fc03" stroke="#000" stroke-width="2"/>
+  <text x="25" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+
+  <!-- Tekst "Dobry Lotek" -->
+  <text x="60" y="32" font-size="24" font-weight="700" fill="#BFFF00" font-family="Verdana, sans-serif" letter-spacing="1">
+    Dobry Lotek
+  </text>
+</svg>
