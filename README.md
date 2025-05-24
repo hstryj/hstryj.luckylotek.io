@@ -21,7 +21,6 @@ Projekt stworzony jako narzędzie edukacyjno-eksperymentalne. Nie stanowi porady
 
 ## 🚀 Jak uruchomić projekt lokalnie
 
-```bash
 git clone https://github.com/hstryj/hstryj.luckylotek.io.git
 cd luckylotek
 npm install
